@@ -64,3 +64,194 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+nav > a, .logo, 
+.banner-left, .banner-right, 
+.features, .about, 
+.services, .product, .vision, .about-left, .about-right, .mission-left, .mission-right{
+	display: inline-block;
+	vertical-align: top;
+}
+a{
+  position: relative;
+}
+a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #b7b7b7;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover:before{
+  visibility: visible;
+  transform: scaleX(1);
+}
+a:last-child:hover:before{
+	visibility: hidden;
+}
+header{
+	margin-bottom: 180px;
+}
+nav{
+	width: 100%;
+	height: 120px;
+	background: gray;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	padding-left: 100px;
+}
+.logo{
+	background-image: url("../img/logo.png");
+	width: 230px;
+	height: 45px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 35px;
+	margin-left: 100px;
+}
+nav > a{
+	margin: 50px 0 0 80px;
+	color: #b7b7b7;
+	text-decoration: none;
+	font-size: 18px;
+}
+.banner-left, .banner-right{
+	width: 548px;
+}
+h1{
+	font-size: 100px;
+	text-align: center;
+	margin-bottom: 0;
+}
+h2{
+	font-size: 22px;
+}
+p, address{
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.banner{
+	padding-bottom: 50px;
+}
+.main{
+	padding: 50px 0;
+	margin: 50px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.banner-left{
+	margin-left: 50px;
+	width: 498px;
+	margin-top: 70px;
+}
+.banner-right{
+	width: 475px;
+	height: 475px;
+	background-image: url("../img/header-img.png");
+	background-size: cover;
+	margin-left: 73px;
+}
+button{
+	width: 220px;
+	background: white;
+	border: 1px solid black;
+	padding: 4px 20px;
+	font-size: 22px;
+	margin-left: 130px;
+	font-family: 'Titillium Web', sans-serif
+	transition: all 0.5s;
+}
+button span{
+	cursor: pointer;
+  display: inline-block;
+  position: relative;
+	transition: 0.5s;
+}
+button:hover span{
+	padding-right: 25px;
+}
+button span:after{
+	content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+button:hover span:after{
+	opacity: 1;
+  right: 0;
+}
+.features, .about{
+	width: 548px;
+}
+.middle-img{
+	width: 1100px;
+	height: 230px;
+	margin: 40px 0;
+	background-image: url("../img/mid-page-accent.jpg");
+	background-size: cover;
+}
+.services, .product, .vision{
+	width: 345px;
+}
+.product, .vision{
+	margin-left: 28px;
+}
+.banner-about{
+	height: 400px;
+	width: 100%;
+	background-image: url('../img/our-office.jpeg');
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 30px;
+}
+.about-left, .about-right, .mission-left, .mission-right{
+	width: 548px;
+}
+.about-left{
+	margin-right: 8px;
+}
+.about-right{
+	height: 400px;
+	width: 540px;
+	background-image: url('../img/our-team.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.mission-left{
+	height: 400px;
+	width: 540px;
+	background-image: url('../img/our-mission.jpeg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+.contact{
+	margin-bottom: 70px;
+}
+ul{
+	list-style-type: square;
+	list-style-position: inside;
+}
+li{
+	font-size: 18px;
+	padding: 10px 0;
+}
+footer{
+	text-align: center;
+	margin-bottom: 140px;
+}
+footer p{
+	font-size: 17px;
+}
